@@ -30,6 +30,28 @@ func main()  {
 	fmt.Println(slice1)
 	a2[2] = "jaja"
 	fmt.Println(slice1)
-	
+
+	// inter arrays
+	fmt.Println("---------")
+	slice3 := make([]float32,10,11)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // size
+	fmt.Println(cap(slice3)) // max size
+
+	slice3 = append(slice3, 5)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // size
+	fmt.Println(cap(slice3)) // max size
+
+	slice3 = append(slice3, 8)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // size
+	fmt.Println(cap(slice3)) // max size
+
+	slice4 := make([]float32,5)
+	fmt.Println(slice4)
+	fmt.Println(len(slice4)) // size
+	fmt.Println(cap(slice4)) // max size
+
 
 }
