@@ -13,12 +13,12 @@ func main()  {
 	}
 	fmt.Println(user)
 
-	user2 := map[string]map[string]string{
-		"Nome": {
+	user2 := map[string]interface{}{
+		"Nome": map[string]string{
 		"first":"Pedro",
 		"last": "lala"},
 		
-		"id":{"number":"12"},
+		"id":12,
 	}
 	fmt.Println(user2)	
 	delete(user2,"id")
